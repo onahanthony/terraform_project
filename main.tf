@@ -15,7 +15,8 @@ terraform {
     }
   }
 }
-
+provider "aws" {
+}
 # security group 
 variable "main" {
   type    = string
