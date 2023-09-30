@@ -15,8 +15,6 @@ terraform {
     }
   }
 }
-provider "aws" {
-}
 # security group 
 variable "main" {
   type    = string
@@ -73,7 +71,6 @@ variable "ami" {
 
 locals {
   instance_type = "t2.micro"
-  private_key_path = "~/my-key.pem"
 }
 
 resource "aws_instance" "test" {
