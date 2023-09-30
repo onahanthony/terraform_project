@@ -65,10 +65,6 @@ resource "aws_security_group" "http" {
   }
 }
 
-provider "aws" {
-  region = "us-east-1"
-}
-
 variable "ami" {
   type    = string
   default = "ami-051f7e7f6c2f40dc1"
