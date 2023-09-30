@@ -18,7 +18,7 @@ jobs:
 
     - name: Configure Terraform Cloud Backend
       run: |
-        terraform login
+        echo "yes" | terraform login
         terraform init -reconfigure
 
     - name: Configure AWS Credentials
