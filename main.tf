@@ -7,13 +7,10 @@ terraform {
       name = "terraform_project"
     }
   }
+}
 
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "5.15.0"
-    }
-  }
+provider "aws" {
+  # Configuration options
 }
 # security group 
 variable "main" {
