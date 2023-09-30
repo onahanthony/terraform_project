@@ -33,6 +33,10 @@ jobs:
       
     - name: Plan Terraform Changes
       run: terraform plan
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1  # Change this to your desired AWS region
       
     - name: Apply Terraform Changes
       run: terraform apply -auto-approve  # U
