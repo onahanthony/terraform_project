@@ -33,6 +33,8 @@ jobs:
       
     - name: Validate Terraform Configuration
       run: terraform validate
+    - name: Validate Terraform Configuration
+      run: terraform fmt      
       
     - name: Plan Terraform Changes
       run: terraform plan
